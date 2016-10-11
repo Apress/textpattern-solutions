@@ -1,0 +1,21 @@
+# rss_if_search_results v0.1
+# Conditional output if there are, or are not, search results on the current page.
+# Rob Sable
+# http://www.wilshireone.com/
+
+# ......................................................................
+# This is a plugin for Textpattern - http://textpattern.com/
+# To install: textpattern > admin > plugins
+# Paste the following text into the 'Install plugin' box:
+# ......................................................................
+
+H4sIAAAAAAAAA8VUXW+bMBR9Dr/CQ1WTSFGANCSZoXmZOqmv7eM0IQOXgOTYln1JOlX977OB
+aB/Nsk7aNF5sX997zzn42IxGEX02dEl9wfbgJ4YuIuprY7KmygwwXdSZBtNyNG5zTf0DaNNI
+4VY31A/nkZutqM9arKV2i/fUf5A5eWQ57zpG4Wk3a3XTYdg+NaKiQXA8HufHhpu60SAFzAu5
+D7oiS6MEU+hG4QC3sX0+SFE2LsA4kS2qFklTEaxBA2EaZkRqNxIhcUZ6/mTgT6RwiaRotQaB
+RLEdzF1fKx6/KEu1oaGDob4loWyVlZzTqFdUA1fZ92nLPtap3yyo743SOtreV+SxR33oUdPA
+Rj27qbZ/m3saqKHzR1sJT2yvONA+mhayhG2aaxJsvWuOCT4pevZYr3eYDHn3pGYHOGH+VAzc
+wA+5pRRj/FVF8Ba8NOhY9hrSEvhW6jRw4+9FCHlJx0VuZ9W8QcclyP8k5Y/p2Y8MnneR7jLG
+sXVv1YrCeZOcPbTJFUM0M3KFdSN2U/LsjXZc5tbILmKcHRNvpAFbLaw5tYHJ3YHxO/uXJ33N
+7FvmpzFKZHz8+d1tOJ0m3ov3Cv2Vln9D4PZEYHjN9mXczex1hk1ZMra+WRT5EqKiqsIFW6/i
+KK5WRRjmNu/lKyzcZ7k9BQAA

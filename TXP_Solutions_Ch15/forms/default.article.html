@@ -1,0 +1,16 @@
+<txp:if_article_category name="Code" number="2">
+<script type="text/javascript" src="/js/codehighlighter.js"></script>
+<script type="text/javascript" src="/js/css.js"></script>
+<script type="text/javascript" src="/js/html.js"></script>
+<script type="text/javascript" src="/js/javascript.js"></script>
+<script type="text/javascript" src="/js/ruby.js"></script>
+</txp:if_article_category>
+<h1><txp:title /></h1>
+<p class="info"><a href="#discuss"><txp:comments_count /> comment<txp:php>
+if ($GLOBALS['thisarticle']['comments_count'] != 1)
+{
+echo 's';
+}
+</txp:php></a>
+| Posted: <txp:posted /> in <em><txp:category1 /></em>, by <txp:author /></p>
+<txp:body />

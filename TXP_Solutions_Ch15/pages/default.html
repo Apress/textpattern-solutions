@@ -1,0 +1,18 @@
+<txp:output_form form="doctype" />
+<title><txp:if_article_list><txp:sitename /><txp:else /><txp:page_title separator=" | " /></txp:if_article_list></title>
+</head>
+<body id="godbit_com">
+<div id="container">
+<txp:output_form form="sidebar_left" />
+<div id="content">
+<txp:if_article_list>
+<txp:article limit="5" form="excerpt" />
+<txp:else />
+<txp:article form="default" />
+</txp:if_article_list>
+</div>
+<txp:output_form form="sidebar_right" />
+<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

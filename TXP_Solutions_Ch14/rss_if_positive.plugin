@@ -1,0 +1,20 @@
+function rss_if_positive($atts, $thing) {
+	extract(lAtts(array(
+		'number' => 0,
+	),$atts));
+
+	$condition = ($number > 0)? true : false;
+	return parse(EvalElse($thing, $condition));
+}
+
+<txp:rss_if_positive number="1">
+It's positive!
+<txp:else />
+It's negative!
+</txp:rss_if_positive>
+
+<txp:rss_if_positive number="-1">
+It's positive!
+<txp:else />
+It's negative!
+</txp:rss_if_positive>

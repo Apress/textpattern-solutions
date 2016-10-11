@@ -1,0 +1,12 @@
+<h1><txp:title /></h1>
+<p class="info"><a href="#discuss"><txp:comments_count /> comment<txp:php>
+if ($GLOBALS['thisarticle']['comments_count'] != 1)
+{
+echo 's';
+}
+</txp:php></a>
+| Posted: <txp:posted /> in <em>Featured</em>, by <txp:author /></p>
+<p class="featured">
+<a href="<txp:custom_field name="featured_url" />" title="<txp:title />"><txp:article_image /></a>
+</p>
+<txp:body />

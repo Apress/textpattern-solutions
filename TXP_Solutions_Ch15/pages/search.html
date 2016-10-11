@@ -1,0 +1,27 @@
+<txp:output_form form="doctype" />
+<title><txp:sitename /> | <txp:section title="1" /></title>
+</head>
+<body id="godbit_com">
+<div id="container">
+<txp:output_form form="sidebar_left" />
+<div id="content">
+<txp:article pgonly="1" limit="10" />
+<h1><txp:search_result_count />:</h1>
+<p class="pagination">
+<txp:newer showalways="1">&laquo; Prev</txp:newer> /
+<txp:older showalways="1">Next &raquo;</txp:older>
+</p>
+<div id="search_wrap">
+<txp:article form="search_results" limit="10" />
+</div>
+<hr />
+<p class="pagination">
+<txp:newer showalways="1">&laquo; Prev</txp:newer> /
+<txp:older showalways="1">Next &raquo;</txp:older>
+</p>
+</div>
+<txp:output_form form="sidebar_right" />
+<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

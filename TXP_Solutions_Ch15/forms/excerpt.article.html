@@ -1,0 +1,14 @@
+<h1><a href="<txp:permlink />"><txp:title /></a></h1>
+<p class="info"><a href="<txp:permlink />#discuss"><txp:comments_count /> comment<txp:php>
+if ($GLOBALS['thisarticle']['comments_count'] != 1)
+{
+echo 's';
+}
+</txp:php></a>
+| Posted: <txp:posted /> in <em><txp:category1 /></em>, by <txp:author /></p>
+<p class="excerpt">
+<txp:rss_auto_excerpt words="50" linktext="Read More" linkwraptag="span" excerptwraptag="" overrideexcerpt="1" striptags="1" ending="&#8230;" showlinkwithexcerpt="0" />
+<span>
+<a href="<txp:permlink />">&bull; Read more</a>
+</span>
+</p>

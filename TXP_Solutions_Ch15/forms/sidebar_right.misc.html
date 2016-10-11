@@ -1,0 +1,26 @@
+<div id="sidebar_right">
+<a href="http://9rules.com/" id="rules9">9rules Network</a>
+<form method="get" action="/search">
+<p>
+<label for="search_field">Search Godbit:</label>
+<input type="text" name="q" id="search_field" />
+</p>
+</form>
+<p id="feed"><acronym title="Rich Site Summary">RSS</acronym>: <a href="http://feeds.feedburner.com/godbit">Main</a>, <a href="http://feeds.feedburner.com/godbit_comments">Comments</a>, <a href="http://feeds.feedburner.com/godbit_forum">Forum</a>, <a href="http://feeds.feedburner.com/godbit_links">Links</a></p>
+<h2>Featured Sites: // <a href="/featured/">view all</a></h2>
+<txp:article_custom form="featured_preview" limit="2" section="featured" sortby="posted" sortdir="desc" pageby="8" />
+<h2>Tutorials:</h2>
+<ul class="links">
+<txp:article_custom limit="4" section="article" form="headlines" category="tutorials" sortby="rand()" />
+</ul>
+
+<h2>Interviews:</h2>
+<ul class="links">
+<txp:article_custom limit="4" section="article" form="headlines" category="interviews" sortby="rand()" />
+</ul>
+
+<h2>Site Mechanics:</h2>
+<p>
+This site is maintained using the <acronym title="Content Management System">CMS</acronym> <a href="http://textpattern.com/">Textpattern</a> and adheres to valid <a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and <a href="http://contentquality.com/mynewtester/cynthia.exe?Url1=http://godbit.com<txp:page_url />">508</a> accessibility requirements. The forums uses <a href="http://punbb.org/">PunBB</a>. Articles <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">&copy;&nbsp;2005-<txp:php>echo date('Y');</txp:php></a> respective authors.
+</p>
+</div>

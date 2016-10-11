@@ -1,0 +1,3 @@
+<txp:output_form form="pwf_header" />
+<txp:article form="pwf_static" limit="1" />
+<txp:output_form form="pwf_footer" />

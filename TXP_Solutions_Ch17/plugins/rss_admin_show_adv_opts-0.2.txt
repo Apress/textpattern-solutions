@@ -1,0 +1,21 @@
+# rss_admin_show_adv_opts v0.2
+# Automatically expand article advanced options.
+# Rob Sable
+# http://www.wilshireone.com/
+
+# ......................................................................
+# This is a plugin for Textpattern - http://textpattern.com/
+# To install: textpattern > admin > plugins
+# Paste the following text into the 'Install plugin' box:
+# ......................................................................
+
+H4sIAAAAAAAAA22STY+bMBCGz+VXTK2VIFISQshXHYK6UreHXlbq9o6MccAtsS1sQqJV/nsH
+SA7V9ub5fJ+ZMaNRRN8tXVGi2EmQvaXLmJLG2owVJ6kyW+kOn+dMG2f78JaSs2is1Kq3MHcx
+X/avDSWsdZVueuMLJT91Dm8sr4ee0eIRzdpGDirYp3LO0DDsum7eydpWshFaiTnXp3Aoiigp
+hOWNNO4ut0KV59bpE3OSs7q+grgYpgpgDTpqAUjKFBcF6KHGzocqStzVIIikEZo7SlDCNMLi
+QPngQt5K1CZ7pC3Gqt43kMRoeJ+SKkrfcB/w/FB5HVWSECMeJpj0VyUtmLotpQIcqgb2P1xX
+fUQFrQY/18oJ5WCWQtdIJ8CxfJ6EBgU8D+7zcF2Mx9r1ZPIIwVd3MRIrmyPjAg4H8IcD+hMP
+oBGltBjKeoic8T/BcOF/bzsFct8imew979gq3nPBh8zgSZwRcApP2NNM4N0TvNKQJAm8vH73
+kvFiUDNVtqwUB/KDndnb4CTQb/hAnLi48De6x1ySJp9nM48VxUvfOeikKnQ39WvNCn/6IAlQ
+yumyrMU3aU3NroH/2KE/2d8QejZLk3BsmXrIsvdu9096KtbDa0nJaiPidR4LxtfHbc43q1jw
+fBXv+G5x3C63nOxvfwGOHMGNFgMAAA==

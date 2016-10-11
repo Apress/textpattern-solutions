@@ -1,0 +1,31 @@
+<txp:output_form form="doctype" />
+<title><txp:if_article_list><txp:sitename /> | <txp:section title="1" /><txp:else /><txp:page_title separator=" | " /></txp:if_article_list></title>
+</head>
+<body id="godbit_com">
+<div id="container">
+<txp:output_form form="sidebar_left" />
+<div id="content">
+<txp:if_article_list>
+<h1>Featured Sites</h1>
+<txp:article pgonly="1" offset="2" limit="8" />
+<p class="pagination">
+<txp:older showalways="1">&laquo; Older</txp:older> /
+<txp:newer showalways="1">Newer &raquo;</txp:newer>
+</p>
+<p id="featured_gallery">
+<txp:article form="featured_gallery" offset="2" limit="8" />
+</p>
+<p class="pagination">
+<txp:older showalways="1">&laquo; Older</txp:older> /
+<txp:newer showalways="1">Newer &raquo;</txp:newer>
+</p>
+</txp:if_article_list>
+<txp:if_individual_article>
+<txp:article form="featured_article" />
+</txp:if_individual_article>
+</div>
+<txp:output_form form="sidebar_right" />
+<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

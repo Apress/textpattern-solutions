@@ -1,0 +1,35 @@
+<?php
+$plugin['name'] = 'rss_admin_tabs';
+$plugin['version'] = '0.1';
+$plugin['author'] = 'Rob Sable';
+$plugin['author_uri'] = 'http://www.wilshireone.com/';
+$plugin['description'] = 'Admin tab example';
+$plugin['type'] = 0;
+
+if (!defined('txpinterface'))
+	@include_once('zem_tpl.php');
+
+if (0) {
+?>
+# --- BEGIN PLUGIN HELP ---
+
+This example shows how to register admin tabs.
+
+# --- END PLUGIN HELP ---
+<?php
+}
+# --- BEGIN PLUGIN CODE ---
+
+if (@txpinterface == 'admin') {
+	register_tab("extensions", "rss_db_man", "DB Manager");
+	register_callback("rss_db_man", "rss_db_man");
+
+	register_tab("extensions", "rss_sql_run", "Run SQL");
+	register_callback("rss_sql_run", "rss_sql_run");
+
+	register_tab("extensions", "rss_db_bk", "DB Backup");
+	register_callback("rss_db_bk", "rss_db_bk");
+}
+
+# --- END PLUGIN CODE ---
+?>

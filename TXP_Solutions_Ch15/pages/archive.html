@@ -1,0 +1,51 @@
+<txp:output_form form="doctype" />
+<title><txp:sitename /> | <txp:section title="1" /></title>
+</head>
+<body id="godbit_com" class="archive_page">
+<div id="container">
+<txp:output_form form="sidebar_left" />
+<div id="content">
+<h1>Archive</h1>
+
+<txp:if_section name="archive_dates">
+<p class="info">Browse by: Dates | <a href="/archive_topics/">Topics</a> | <a href="/archive_links/">Links</a></p>
+<txp:rss_suparchive section="article,featured" dateformat="F Y" showsubdate="1" />
+</txp:if_section>
+
+<txp:if_section name="archive_topics">
+<p class="info">Browse by: <a href="/archive_dates/">Dates</a> | Topics | <a href="/archive_links/">Links</a></p>
+<h2>Book Reviews</h2>
+<ul>
+<txp:article_custom limit="999" form="headlines" section="article" category="Books" sort="title asc" />
+</ul>
+<h2>Featured Sites</h2>
+<ul>
+<txp:article_custom limit="999" form="headlines" section="featured" sort="title asc" />
+</ul>
+<h2>General</h2>
+<ul>
+<txp:article_custom limit="999" form="headlines" section="article" category="General" sort="title asc" />
+</ul>
+<h2>Interviews</h2>
+<ul>
+<txp:article_custom limit="999" form="headlines" section="article" category="Interviews" sort="title asc" />
+</ul>
+<h2>Tutorials</h2>
+<ul>
+<txp:article_custom limit="999" form="headlines" section="article" category="Tutorials" sort="title asc" />
+</ul>
+</txp:if_section>
+
+<txp:if_section name="archive_links">
+<p class="info">Browse by: <a href="/archive_dates/">Dates</a> | <a href="/archive_topics/">Topics</a> | Links</p>
+<ul id="archive_links">
+<txp:linklist form="Links" sort="linkname asc" limit="9999" />
+</ul>
+</txp:if_section>
+
+</div>
+<txp:output_form form="sidebar_right" />
+<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>

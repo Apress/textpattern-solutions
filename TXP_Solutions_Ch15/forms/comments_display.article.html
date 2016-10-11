@@ -1,0 +1,10 @@
+<h2 id="discuss">Discuss This Topic</h2>
+<txp:comments />
+<txp:if_comments_preview>
+<txp:comments_preview form="comments_preview" />
+</txp:if_comments_preview>
+<txp:if_comments_allowed>
+<txp:comments_form />
+<txp:else />
+<p id="txpCommentInputForm">Commenting has expired.</p>
+</txp:if_comments_allowed>

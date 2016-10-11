@@ -1,0 +1,67 @@
+body {
+background-color:#fff; 
+color:#333333;
+margin: 20px 50px;
+}
+
+/*base links*/
+a:link {color: #990000;}
+a:visited {color: #990000;}
+a:hover {color: #990000;text-decoration: none;}
+a:active {color: #990000;}
+
+hr{
+border: 0;
+color: #ccc;
+background-color: #ccc;
+height: 1px;
+}
+
+#head{
+text-align:center;
+}
+
+h1{
+background-color:#716844;
+padding:20px 20px;
+color: #fff;
+}
+
+h1 a:link, h1 a:visited, h1 a:active{
+color: #fff;
+text-decoration: none;
+display:block;
+}
+
+#leftCol{
+width:56%;
+padding:0 2% 0 1%;
+border-right:1px solid #ccc;
+min-height:500px;
+}
+
+#rightCol{
+float:right;
+width:36%;
+padding:0 2% 0 1%;
+min-height:500px;
+}
+
+.comments{
+list-style:none;
+padding-left:0;
+}
+
+small{
+color:#666;
+}
+
+#cpreview{
+background-color:#FFFFCC;
+padding:10px;
+margin:20px 0;
+}
+
+.reviewError, .comments_error {
+color: red;
+}

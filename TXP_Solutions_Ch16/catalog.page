@@ -1,0 +1,47 @@
+<txp:output_form form="pwf_header" />
+
+<txp:if_article_list>
+
+	<txp:if_category>
+		<h2><txp:category title="1" /></h2>
+	<txp:else />
+		<h2>All Wedding Favors</h2>
+	</txp:if_category>
+
+	<txp:if_category>
+
+		<txp:rss_unlimited_categories_article_list section="catalog"
+			usechildren="1" limit="999" form="pwf_prodlist"
+			sortby="(custom_6+0)" />
+
+
+	<txp:else />
+
+
+		<h3>Wedding Favors</h3>
+
+		<ul>
+			<txp:rss_unlimited_categories_article_list section="catalog"
+				category="wedding-favors" usechildren="1" limit="999"
+				form="pwf_byprice" filter="1" filterfield="custom_6"
+				filtername="byprice" sortby="(custom_6+0)" />
+		</ul>
+
+		<h3>Edible Wedding Favors</h3>
+
+		<ul>
+			<txp:rss_unlimited_categories_article_list section="catalog"
+				category="edible-wedding-favors" usechildren="1" limit="999"
+				form="pwf_byprice" filter="1" filterfield="custom_6"
+				filtername="byprice" sortby="(custom_6+0)" />
+		</ul>
+
+	</txp:if_category>
+
+<txp:else />
+
+	<txp:article form="pwf_product" />
+
+</txp:if_article_list>
+
+<txp:output_form form="pwf_footer" />

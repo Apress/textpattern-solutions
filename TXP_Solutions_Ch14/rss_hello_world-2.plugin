@@ -1,0 +1,41 @@
+<?php
+$plugin['name'] = 'rss_hello_world';
+$plugin['version'] = '0.1';
+$plugin['author'] = 'Rob Sable';
+$plugin['author_uri'] = 'http://www.wilshireone.com/';
+$plugin['description'] = 'A basic Textpattern plugin.';
+$plugin['type'] = 0;
+
+if (!defined('txpinterface'))
+	@include_once('zem_tpl.php');
+
+if (0) {
+?>
+# --- BEGIN PLUGIN HELP ---
+
+h1. Hello, Textpattern World
+
+This is a basic Textpattern plugin.
+
+# --- END PLUGIN HELP ---
+<?php
+}
+# --- BEGIN PLUGIN CODE ---
+
+function rss_hello_world($atts, $thing = NULL) {
+	extract(lAtts(array(
+		'name' => 'Anonymous',
+		'message' => 'Hello Textpattern World, my name is',
+		'wraptag' => 'p',
+	),$atts));
+
+
+	if ($thing === NULL) {
+		return doTag($message.' '.$name, $wraptag);
+	}
+	return doTag(parse($thing).' '.$name, $wraptag);
+}
+
+# --- END PLUGIN CODE ---
+?>
+

@@ -1,0 +1,3 @@
+<txp:output_form form="pwf_header" />
+<txp:output_form form="pwf_home" />
+<txp:output_form form="pwf_footer" />

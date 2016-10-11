@@ -1,0 +1,21 @@
+<div id="sidebar_left">
+<a href="#content" id="skip">Skip to Content</a>
+<div id="logo"><txp:if_section name=""><!-- &nbsp; --><txp:else /><a href="/" title="Home" accesskey="1">Home</a></txp:if_section></div>
+<ul id="menu"><li><a href="/forum/" accesskey="2">Discussion Forum</a></li><li><a href="/purpose/" accesskey="3">Purpose + Vision</a></li><li><a href="/about/" accesskey="4">About the Authors</a></li><li><a href="/archive_dates/" accesskey="5">Article Archive</a></li><li><a href="/wallpaper/" accesskey="6">Desktop Wallpaper</a></li><li><a href="/help/" accesskey="7">Help + Questions</a></li><li><a href="/contact/" accesskey="8">Contact Us</a></li></ul>
+<h2>Forum Buzz:</h2>
+<ul class="links">
+<txp:php>
+$ch = curl_init("http://godbit.com/forum/extern.php?action=active&show=4");
+curl_exec($ch);
+curl_close($ch);
+</txp:php>
+</ul>
+<h2>External Links: // <a href="/archive_links">view all</a></h2>
+<ul class="links">
+<txp:linklist form="links" limit="4" sort="date desc" />
+</ul>
+<h2>Book Reviews:</h2>
+<ul class="links">
+<txp:article_custom limit="4" section="article" form="headlines" category="books" sortby="rand()" />
+</ul>
+</div>
